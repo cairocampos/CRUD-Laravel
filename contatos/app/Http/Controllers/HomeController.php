@@ -31,4 +31,12 @@ class HomeController extends Controller {
 
 		return redirect("/");
 	}
+
+	public function del($id) {
+
+		Contato::find($id)->delete();
+
+		return redirect("/");
+
+	}
 }

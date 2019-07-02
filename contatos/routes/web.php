@@ -18,3 +18,5 @@
 Route::get("/", "HomeController@index");
 
 Route::post("/", "HomeController@add");
+
+Route::get("/delete/{id}", "HomeController@del");
