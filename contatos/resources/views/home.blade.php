@@ -1,6 +1,15 @@
 <link rel="stylesheet" href="{{ 'css/style.css' }}">
 <h1><u>Meus Contatos</u></h1>
 
+<form method="POST">
+	{{ csrf_field() }}
+	<input type="text" name="nome" placeholder="Nome">
+
+	<input type="email" name="email" placeholder="Email">
+
+	<input type="submit" value="Salvar">
+</form>
+
 <div id="role-overflow">
 	@if(count($contatos))
 	<table border="1" width="100%">
