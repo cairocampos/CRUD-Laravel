@@ -21,7 +21,7 @@
 			<tr>
 				<td>{{ $contato->name }}</td>
 				<td>{{ $contato->email }}</td>
-				<td><a href="delete/{{ $contato->id }}">Excluir</a></td>
+				<td><a href="delete/{{ $contato->id }}">Excluir</a> - <a href="editar/{{ $contato->id }}">Editar</a></td>
 			</tr>
 		@endforeach
 	</table>

@@ -20,3 +20,7 @@ Route::get("/", "HomeController@index");
 Route::post("/", "HomeController@add");
 
 Route::get("/delete/{id}", "HomeController@del");
+
+Route::get("/editar/{id}", "EditarController@index");
+
+Route::post("/editar/{id}", "EditarController@update");
